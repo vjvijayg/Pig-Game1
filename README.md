@@ -6,4 +6,4 @@
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game.
 
-It's a simple game developed using JavaScript.
+It's a simple game developed using JavaScript. If you want to play the game [click here](https://vjvijayg.github.io/vjvijayg.github.io-Pig-Game1/)
