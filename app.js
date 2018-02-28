@@ -45,9 +45,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check If the player won the game
-        if(scores[activePlayer] >= 20) {
+        if(scores[activePlayer] >= 100) {
            // Game over won the activePlayer
-            //console.log('Player' + activePlayer + 'has won the game');
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -69,11 +68,7 @@ function nextPlayer() {
     document.getElementById('current-1').textContent = '0';
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
-    /*
-    document.querySelector('.player-0-panel').classList.remove('active');
-    document.querySelector('.player-1-panel').classList.add('active');
-    */
-
+    
     document.querySelector('.dice').style.display = 'none';
 }
 
@@ -99,20 +94,3 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 }
-
-
-/*
-//dice = Math.floor(Math.random() * 6) + 1;
-
-//document.querySelector('#current-0').textContent = dice;
-
-//document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
-
-//var x = document.querySelector('#score-0').textContent;
-//console.log(x);
-*/
-
-
-
-
-
